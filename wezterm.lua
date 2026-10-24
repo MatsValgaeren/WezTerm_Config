@@ -16,8 +16,13 @@ end)
 config.keys = {
     {
         key = 'd',
-        mods = 'CTRL',
-        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' }
+        mods = 'ALT',
+        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    },
+    {
+        key = 'd',
+        mods = 'ALT|SHIFT',
+        action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
     },
 }
 
